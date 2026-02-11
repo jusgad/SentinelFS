@@ -1,0 +1,15 @@
+directories_to_watch:
+  - "C:/Users/sebas/Documents/TargetFolder"  # Ruta de ejemplo, actualizar según sea necesario
+
+detection:
+  max_events: 50
+  time_window_seconds: 10
+  suspicious_extensions:
+    - ".crypted"
+    - ".locked"
+    - ".enc"
+    - ".ransom"
+
+mitigation:
+  enable_network_isolation: true
+  webhook_url: "TU_URL_DE_WEBHOOK_AQUI"  # Reemplazar con la URL real del webhook
